@@ -1,5 +1,4 @@
-function login(event) {
-    event.preventDefault();
+function login() {
 
     var storedAdmin = JSON.parse(localStorage.getItem('admin'));
     var usernameAdmin = storedAdmin.username;

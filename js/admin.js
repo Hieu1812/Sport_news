@@ -10,8 +10,7 @@ window.onload = function () {
         document.getElementById('username').innerText = name;
     }
 }
-function logo(event) {
-    event.preventDefault();
+function logo() {
     window.location.href = "trangchuAdmin.html";
 }
 var openFile = function (file) {
