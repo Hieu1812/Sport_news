@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://sso.admicro.vn/skins/sso07/images/bg.png);
+    background-repeat: repeat;
+}
+
+#house {
+    height: 36px;
+    padding: 5px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menulist {
+    background-color: #A70E1A;
+    position: fixed;
+    top: 72.4px;
+    width: 100%;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: orange;
+    padding: 15px 0px;
+    list-style: none;
+}
+
+#main-menu ul.sub-menu {
+    display: none;
+    padding: 0px;
+}
+
+#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu li:hover {
+    background-color: #A70E1A;
+}
+
+#house:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    background-color: #F0A52B;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 60px;
+}
+
+#trangTinTheThao {
+    margin-top: 25px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+}
+
+.chuyenHuong:hover {
+    background-color: orange;
+}
+
+#login {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: #0055a9;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Josefin Sans";
+    margin-top: 18px;
+    margin-right: 160px;
+}
+
+#login:hover {
+    background-color: blue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 72.4px;
+}
+
+
+
+.mainpage {
+    width: 90%;
+    height: fit-content;
+    margin-top: 200px;
+    margin-left: 50px;
+    display: flex;
+}
+
+#content {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ng1 {
+    width: 300px;
+    background-color: white;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.GTWeb {
+    width: 300px;
+    background-color: white;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 5px;
+}

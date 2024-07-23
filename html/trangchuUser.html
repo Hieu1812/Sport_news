@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/trangchuUser.css">
+    
+  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">
+            <img src="../img/logoHNUE.png" alt="" id="logo" onclick="logo()">
+            <p id="trangTinTheThao">Trang tin thể thao</p>
+        </div>
+        <div class="userdangXuat">
+            <div class="user">
+                <img src="../img/user.png" alt="" id="user">
+                <p id="username"></p>
+            </div>
+            <div id="dxbox">
+                <a href="../html/index.html"><button id="dangXuat">Đăng xuất</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="menulist">
+        <nav class="container">
+            <a href="../html/trangchuUser.html">
+                <img src="../img/house.png" alt="" id="house">
+            </a>
+            <ul id="main-menu">
+                <li><a href="../html/dangtin.html" class="chuyenHuong">Trang đăng bài</a></li>
+                <li><a href="../html/Lienhe.html" class="chuyenHuong">Trang liên hệ</a></li>
+                <li><a href="#" onclick="duyet('Bóng đá')">Bóng đá</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Premier League</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">La Liga</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Serie A</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Bundesliga</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Ligue 1</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">V League</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="duyet('Tennis')">Tennis</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Wimbledon</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">US Open</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">French Open</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Australia Open</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">ATP World Tour Finals</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="duyet('Bóng chuyền')">Bóng chuyền</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Olympic Games</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">FIVB Volleyball World Championships</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">FIVB Volleyball Nations League</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">AVP Pro Beach Volleyball Tour</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">CEV Champions League</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="duyet('Bóng bàn')">Bóng bàn</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Olympic Games</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">World Table Tennis Championships</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">ITTF World Cup</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Asian Table Tennis Championships</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">European Table Tennis Championships</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="duyet('Bóng chày')">Bóng chày</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">MLB Playoffs</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">World Baseball Classic</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Olympics</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">College World Series</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">WBSC Premier 12</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="duyet('Golf')">Golf</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">The Master</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">US Open</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Open Championship</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">PGA Championship</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">British Open</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="duyet('Bóng rổ')">Bóng rổ</a>
+                    <ul class="sub-menu">
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">NBA</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">EuroLeague</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">FIBA World Cup</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Olympic Basketball</a></li>
+                        <li><a href="" onclick="alert('Nội dung đang cập nhật')">Liga ACB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <div class="mainpage">
+            <div class="content" id="content">
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <img src="../img/logoCNTT.png" alt="Logo">
+            <div>
+                <p>Nhóm 6 K72 Nền Tảng Phát Triển Web</p>
+                <p>Ngày 21 Tháng 7 Năm 2024</p>
+            </div>
+        </div>
+        <p>All rights reserved by © Khoa Công nghệ thông tin - ĐHSPHN 2024</p>
+    </div>
+    <script src="../js/trangchuUser.js"></script>
+</body>
+</html>

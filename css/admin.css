@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#house {
+    height: 36px;
+    padding: 5px 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menulist {
+    background-color: #A70E1A;
+    position: fixed;
+    top: 72.4px;
+    width: 100%;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: orange;
+    padding: 15px 0px;
+    list-style: none;
+}
+
+#main-menu ul.sub-menu {
+    display: none;
+    padding: 0px;
+}
+
+#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu li:hover {
+    background-color: #A70E1A;
+}
+
+#house:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    background-color: #F0A52B;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 72.4px;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 60px;
+}
+
+#trangTinTheThao {
+    margin-top: 25px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+}
+
+.chuyenHuong:hover {
+    background-color: orange;
+}
+
+#login {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: #0055a9;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Josefin Sans";
+    margin-top: 18px;
+    margin-right: 160px;
+}
+
+#login:hover {
+    background-color: blue;
+}
+
+#user {
+    width: 50px;
+    height: 50px;
+}
+
+#dangXuat {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #0055a9;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Josefin Sans";
+    margin-top: 18px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#dangXuat:hover {
+    background-color: blue;
+}
+
+.userdangXuat {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+}
+
+.mainpage {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    margin-top: 200px;
+}
+
+h1 {
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    width: 70%;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.text p:first-child {
+    text-align: right;
+    font-size: large;
+}
+
+.text label {
+    font-weight: bold;
+    font-size: larger;
+    padding: 5px;
+}
+
+.timenau {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.timenau p:first-child {
+    margin-right: 50px;
+}
+
+button {
+    width: 90px;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+button:first-child {
+    background-color: skyblue;
+}
+
+button:nth-child(2) {
+    background-color: orange;
+}
+
+button:nth-child(3) {
+    background-color: red;
+}
+
+button:nth-child(4) {
+    background-color: lightgreen;
+}
+
+button:last-child {
+    background-color: red;
+}
+
+.tin1 {
+    position: relative;
+    width: 70%;
+    border: 2px solid black;
+    border-top: none;
+    margin-bottom: 30px;
+    bottom: 30px;
+    border-radius: 5px;
+    display: none;
+}
+
+.noidung {
+    padding: 30px;
+}
+
+.noidung img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.noidung p {
+    line-height: 25px;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.dtcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.dtcontent1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#media {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.dtcontent1 input {
+    padding: 7px;
+    overflow: auto;
+}
+
+.dtcontent1 label {
+    text-align: left;
+    padding: 5px;
+}
+
+#butt {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+#submittin {
+    margin-top: 20px;
+    background-color: brown;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    font-size: medium;
+    padding: 10px;
+    width: 250px;
+}
+
+#edittin {
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    font-size: medium;
+    padding: 10px;
+    width: 250px;
+}
+
+#contentmain {
+    height: 400px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+    overflow: scroll;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7pxpx;
+    cursor: pointer;
+}
+
+#contenthead {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+#contenthead button {
+    width: 30px;
+    padding: 2px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+
+}
+
+#textsize {
+    height: 7px;
+}
+
+#imageonnews {
+    display: none;
+}
+
+.labforimg {
+    border: 2px solid #ccc;
+    display: inline-block;
+    padding: 2px;
+    cursor: pointer;
+}

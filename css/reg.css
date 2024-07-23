@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://sso.admicro.vn/skins/sso07/images/bg.png);
+    background-repeat: repeat;
+}
+.main{
+    margin: auto;
+    margin-top: 150px;
+    width: 400px;
+    height: fit-content;
+    border: 2px solid grey;
+    background-color: white;
+}
+h1{
+    padding: 10px;
+    background-color: #f2f2f3;
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 15px;
+}
+button{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    font-family: sans-serif;
+    border-style: none;
+    border-radius: 3px;
+    font-size: medium;
+    font-weight: bold;
+}
+#username,#password,#name,#repassword{
+    padding: 10px;
+    outline: 0px;
+    border-style: none;
+    border-bottom: 2px solid grey;
+}
+.input{
+    display: flex;
+    justify-content: space-evenly;
+}
+.input2{
+    display: flex;
+}
+label{
+    margin-left: 6px;
+    color: red;
+    font-family: "Josefin Sans";
+}
+p, a{
+    text-align: center;
+}

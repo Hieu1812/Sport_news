@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#house {
+    height: 36px;
+    padding: 5px 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menulist {
+    background-color: #A70E1A;
+    position: fixed;
+    top: 72.4px;
+    width: 100%;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu li a {
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: orange;
+    padding: 15px 0px;
+    list-style: none;
+}
+
+#main-menu ul.sub-menu {
+    display: none;
+    padding: 0px;
+}
+
+#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+
+#main-menu ul.sub-menu li:hover {
+    background-color: #A70E1A;
+}
+
+#house:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    background-color: #F0A52B;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 72.4px;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 60px;
+}
+
+#trangTinTheThao {
+    margin-top: 25px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+}
+
+.chuyenHuong:hover {
+    background-color: orange;
+}
+
+#login {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: #0055a9;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Josefin Sans";
+    margin-top: 18px;
+    margin-right: 160px;
+}
+
+#login:hover {
+    background-color: blue;
+}
+
+#user {
+    width: 50px;
+    height: 50px;
+}
+
+.user {
+
+    text-align: center;
+}
+
+#dangXuat {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #0055a9;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Josefin Sans";
+    margin-top: 18px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#dangXuat:hover {
+    background-color: blue;
+}
+
+.userdangXuat {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+}
+
+body {
+
+    background-color: #f1f1f1;
+}
+
+#mainpage {
+    width: 70%;
+    height: fit-content;
+    margin-top: 250px;
+    margin-left: 50px;
+    display: flex;
+    border: 2px solid #e7e8ea;
+    background-color: white;
+}
+
+#newspage {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#title1 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#timenau {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: larger;
+    column-gap: 30px;
+}
+
+#trim {
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#image {
+    align-self: center;
+}
+
+#noidung {
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#displaycmt {
+    width: 70%;
+    height: fit-content;
+    margin-left: 50px;
+    border: 2px solid #e7e8ea;
+    background-color: white;
+}
