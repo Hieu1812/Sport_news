@@ -10,7 +10,9 @@ function logo() {
     window.location.href = "index.html";
 }
 localStorage.removeItem('index');
-
+var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
+    localStorage.removeItem('loggedInUser')
+})
 var listbv = JSON.parse(localStorage.getItem('baivietlist')) || {};
 for (let i = 0; i < listbv.length; i++) {
     baiviet = listbv[i];

@@ -14,6 +14,10 @@ function logo() {
     window.location.href = "trangchuAdmin.html";
 }
 
+var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
+    localStorage.removeItem('loggedInUser')
+})
+
 function themTaiKhoan() {
     var username = document.getElementById("taiKhoan");
     var password = document.getElementById("matKhau");

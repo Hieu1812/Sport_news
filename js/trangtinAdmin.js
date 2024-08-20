@@ -14,6 +14,9 @@ window.onload = function () {
 window.onbeforeunload = function () {
     localStorage.setItem('index', suoc);
 }
+var dx = document.getElementById('dangxuat').addEventListener('click', () => {
+    localStorage.removeItem('loggedInUser')
+})
 function logo() {
     window.location.href = "trangchuAdmin.html";
 }

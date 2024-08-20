@@ -9,7 +9,9 @@ window.onload = function () {
     document.getElementById('username').innerText = name;
   }
 }
-
+var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
+  localStorage.removeItem('loggedInUser')
+})
 function logo() {
   window.location.href = "trangchuUser.html";
 }

@@ -13,6 +13,9 @@ window.onload = function () {
 function logo() {
     window.location.href = "trangchuAdmin.html";
 }
+var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
+    localStorage.removeItem('loggedInUser')
+})
 var openFile = function (file) {
     var input = file.target;
     var reader = new FileReader();
