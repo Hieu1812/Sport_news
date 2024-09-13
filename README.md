@@ -1,5 +1,6 @@
 # Sport news website.
 ## Introduction
+A classic sport news website work on local storage.
 ### 1. Language: 
 HTML, CSS, JS.
 ### 2. Actor and function:
