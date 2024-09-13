@@ -14,7 +14,7 @@ function logo() {
     window.location.href = "trangchuAdmin.html";
 }
 
-var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
+var dx = document.getElementById('dangXuat').addEventListener('click',()=>{
     localStorage.removeItem('loggedInUser')
 })
 

@@ -10,7 +10,7 @@ window.onload = function() {
     document.getElementById('username').innerText = name;
   }
 }
-var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
+var dx = document.getElementById('dangXuat').addEventListener('click',()=>{
   localStorage.removeItem('loggedInUser')
 })
 function logo(){

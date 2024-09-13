@@ -10,9 +10,7 @@ window.onload = function () {
     document.getElementById('username').innerText = name;
   }
 }
-var dx = document.getElementById('dangxuat').addEventListener('click',()=>{
-  localStorage.removeItem('loggedInUser')
-})
+
 function logo() {
   window.location.href = "trangchuUser.html";
 }
@@ -319,6 +317,9 @@ function xem() {
   }
 }
 
+var dx = document.getElementById('dangXuat').addEventListener('click',()=>{
+  localStorage.removeItem('loggedInUser')
+})
 
 function changeFont(font) {
   document.execCommand('fontName', false, font.value);

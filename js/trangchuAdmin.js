@@ -11,7 +11,7 @@ window.onload = function () {
     }
 }
 localStorage.removeItem('index');
-var dx = document.getElementById('dangxuat').addEventListener('click', () => {
+var dx = document.getElementById('dangXuat').addEventListener('click', () => {
     localStorage.removeItem('loggedInUser')
 })
 var listbv = JSON.parse(localStorage.getItem('baivietlist')) || {};

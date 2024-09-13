@@ -14,7 +14,7 @@ window.onload = function () {
 window.onbeforeunload = function () {
     localStorage.setItem('index', suoc);
 }
-var dx = document.getElementById('dangxuat').addEventListener('click', () => {
+var dx = document.getElementById('dangXuat').addEventListener('click', () => {
     localStorage.removeItem('loggedInUser')
 })
 function logo() {
